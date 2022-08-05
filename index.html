@@ -32,12 +32,13 @@
         class="header navbar navbar-expand-lg navbar-floating navbar-sticky navbar-dark"
         data-fixed-element=""
       >
-        <div class="container px-0 px-xl-3">
+        <div class="container px-0 px-xl-3" id="#">
           <button
             class="navbar-toggler ms-n2 me-2"
             type="button"
             data-bs-toggle="offcanvas"
             data-bs-target="#primaryMenu"
+            id="scrollspyHeading1"
           >
             <span class="navbar-toggler-icon"></span></button
           ><a
@@ -83,7 +84,6 @@
                 <li class="nav-item dropdown dropdown-mega">
                   <a
                     class="nav-link dropdown-toggle"
-                    href="#"
                     data-bs-toggle="dropdown"
                     >Projects</a
                   >
@@ -131,8 +131,7 @@
           </div>
         </div>
       </header>
-      <!-- Page content-->
-      <!-- Intro-->
+     <!-- Hero Section -->
       <section
         class="d-flex align-items-center position-relative bg-dark bg-size-cover bg-position-center min-vh-100 overflow-hidden pt-6 pb-lg-5"
         style="background-image: url(./img/demo/presentation/bg.png)"
@@ -227,7 +226,7 @@
         </div>
       </section>
 
- <!-- Mobile Interface-->
+ <!-- About Me -->
  <section class="bg-light py-5 py-md-6 py-lg-7" id="about">
   <div class="container py-3 py-lg-4">
     <div class="row align-items-center">
@@ -270,7 +269,7 @@
   </div>
 </section>
 
-      <!-- Demos-->
+      <!-- Projects-->
       <section class="bg-secondary" id="projects">
         <div class="container pt-5 pb-4 py-md-6 py-lg-7">
           <div class="text-center mb-5 pt-3 pt-lg-4">
@@ -695,22 +694,23 @@
       </div>
     </footer>
     <!-- Back to top button--><a
-      class="btn-scroll-top"
-      href="#top"
-      data-scroll=""
-      data-fixed-element=""
-      ><span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span
-      ><i class="btn-scroll-top-icon bi bi-arrow-up"></i
-    >
-  </a>
+    class="btn-scroll-top show"
+    href="#top"
+    data-scroll=""
+    data-fixed-element=""
+    ><span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span
+    ><i class="btn-scroll-top-icon bi bi-arrow-up"></i
+  ></a>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"
+  ></script>
 
-    <script src="vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./simplebar.min.js"></script>
-    <script src="./polyfills.min.js"></script>
-    <script src="./parallax.min.js"></script>
-    <!-- Main theme script-->
-    <script src="./theme.min.js"></script>
-    
-  </body>
-  
+  <script src="./scroll.js"></script>
+  <script src="./theme.min.js"></script>
+</body>
+<grammarly-desktop-integration
+  data-grammarly-shadow-root="true"
+></grammarly-desktop-integration>
 </html>
